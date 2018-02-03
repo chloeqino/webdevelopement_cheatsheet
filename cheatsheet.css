@@ -278,6 +278,7 @@ section{
 	-webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    letter-spacing: 0.04em;
 }
 
 #pink a{
