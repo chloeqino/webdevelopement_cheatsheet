@@ -5,7 +5,7 @@
 	<title>Web Development Cheatsheet</title>
 	
 
-
+ 
 <link rel="shortcut icon" href="favicon_package/favicon.ico">
 <link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#6184c9">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -21,13 +21,20 @@
 	<div class="container">
 	<!--Nav Bar-->
 	<div class="header"><nav>
-	<a href="cheatsheet_2.html"><h2><!--<i class="fa fa-file-text" aria-hidden="true"></i>-->&nbsp;<span id="titletext">Web Development CheatSheet</span></h2></a>
+	<a href="cheatsheet_2.html" onclick="hide()"><h2 title="go to the top" onclick="hide()"><!--<i class="fa fa-file-text" aria-hidden="true"></i>-->&nbsp;<span id="titletext">Web Development CheatSheet</span><span id="title2">Cheatsheet</span></h2></a>
 	<ul>
 		<li><a href="cheatsheet_2.html">Home</a></li>
-		<li><a href="#code">Code</a></li>
+		<li class="code"><a href="#code" onclick="hide()"><font id="codefont">Code &lt; ></font></a>
+        <div class="index">
+		  	<a href="#code">Deflaut Values</a>
+		  	<a href="#right1">Embeding Files</a>
+        	<a href="#center">Responsive Design</a>
+        	<a href="#icon">Adding Icons</a>
+        </div>
+		</li>
 		<li><a href="#link" onclick="hide()">Link</a></li>
 		<span class="dropdown">
-		<li><a onclick="dropDown()"><span id="v">Version&nbsp;&#9660;</span></a></li>
+		<li><a onclick="dropDown()"><span id="v">Version&nbsp;<i id="downarrow">&#9660;</i></span></a></li>
          <div id="version">
 		<a href="cheatsheet.html">Verison 1</a>
 		<a href="cheatsheet_2.html">Version 2</a></div>
@@ -54,7 +61,7 @@
 			<p><i>
 			&nbsp;css file:
 			</i><br><code>
-				&lt;header><br>
+				&lt;head><br>
 				&lt;link rel="stylesheet" type="text/css" href="name.css">
 			</code> <br><br>
 			<i>javascipt file: </i><br><code>
@@ -107,12 +114,12 @@
 <ul>
 	<li id="google"><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
 	<li id="pink"><a href="https://www.w3schools.com/" target="_blank">W3School</a></li>
-	<li id="blue1"><a href="https://www.webpagefx.com/web-design/hex-to-rgb/" target="_blank">HEX to Rgba Converter</a></li>
+	<li id="blue1"><a href="https://www.w3schools.com/bootstrap/default.asp" target="_blank">Learning Bootstrap</a></li>
 	<li id="green1"><a href="https://websitesetup.org/web-safe-fonts-html-css/" target="_blank">Safe Fonts</a></li>
-	<li id="doc"><a href="https://www.webpagefx.com/web-design/color-picker/ffffff" target="_blank">Color Picker</a></li>
+	<li id="doc"><a href="http://htmlcolorcodes.com/color-picker/" target="_blank">Color Picker</a></li>
 	<li id="pink1"><a href="http://fontawesome.io/icons/" target="_blank">Font Awesome Icons</a></li>
 	
-	<li id="green"><a href="https://www.codecademy.com/learn" target="_blank">CodeAcedemy</a></li>
+	<li id="green2"><a href="https://www.codecademy.com/learn" target="_blank">CodeAcedemy</a></li>
 	
 	<li id="pink1"><a href="https://stackoverflow.com/" target="_blank">Stackoverflow</a></li>
 	<li id="purple1"><a href="https://github.com/logeshpaul/CSS-Hacks#css-browser-selector" target="_blank">CSS hacks</a></li>
@@ -128,7 +135,7 @@
 </ul>
 </center>
 	</section> <br>
-	<footer>&diams; ------ THE END ------ &diams;</footer>
+	<footer onclick="hide()">&diams; ------ coded and designed by Qinyu Chen&nbsp;<font size="-5px" color="#B8C7C0">&bull; </font>2018 ------ &diams;<br><br></footer><br>
 	
 </div>
 <script src="cheatsheet.js">
